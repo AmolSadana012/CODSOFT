@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amol Sadana's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f1ff;
+            color: #4b0082;
+        }
+        header {
+            background: #7d5ba6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        hr {
+            width: 50%;
+            margin: auto;
+            border: 1px solid white;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #e0d4fc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-align: left;
+        }
+        .about-container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #7d5ba6;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(125, 91, 166, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+        .about-container img:hover {
+            transform: scale(1.05);
+        }
+        .about-text {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .skill {
+            background: #7d5ba6;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .skill:hover {
+            transform: scale(1.1);
+            background: #5c3d91;
+        }
+        .project {
+            text-align: center;
+        }
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: #7d5ba6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-info {
+            text-align: center;
+        }
+        a {
+            color: #4b0082;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amol Sadana</h1>
+        <hr>
+    </header>
+    
+    <section id="about">
+        <div class="about-container">
+            <img src="Me_pic.jpeg" alt="Amol Sadana">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I am an ambitious and driven individual who thrives on creativity and continuous learning. With a passion for personal growth, I enjoy exploring new ideas, meeting new people, and taking on challenges that push me beyond my comfort zone. Whether it's through reading, traveling, or engaging in meaningful conversations, I am always eager to broaden my perspective and make a positive impact in everything I do.</p>
+                <p>Interest in AI & ML, with specific regard to how these technologies will transform industries and help solve complex problems. Hands-on projects in machine learning algorithms applied to real-world challenges. Background in UI/UX design.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">C & C++</div>
+            <div class="skill">Python</div>
+            <div class="skill">DSA</div>
+            <div class="skill">AI/ML</div>
+            <div class="skill">UI/UX</div>
+            <div class="skill">Video Editing</div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <ol>
+                <li>
+                    <h3 style="text-align: left;">House Price Prediction</h3>
+                    <ul>
+                        <li style="text-align: left;">House Price Prediction is an ML project which is totally based on Python language.</li>
+                        <li style="text-align: left;">Few Python libraries used in this project are NumPy, Pandas, Matplotlib, Seaborn, and Sklearn, etc.</li>
+                        <li style="text-align: left;">Algorithms used are XGBoost, Linear Regression, Random Forest, and Decision Tree, etc.</li>
+                    </ul>
+                </li>
+            
+                <li>
+                    <h3 style="text-align: left;">Wearable Third Eye Device</h3>
+                    <ul>
+                        <li style="text-align: left;">Wearable third eye device tailored for individuals with visual impairments.</li>
+                        <li style="text-align: left;">Through sophisticated algorithms, the device will process data to identify obstacles, detect objects, and provide feedback to the user via tactile, auditory, etc.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h3 style="text-align: left;">AI Assistant Robot</h3>
+                    <ul>
+                        <li style="text-align: left;">Made an AI Assistant robot with Arduino usinf Python and C++ language.</li>
+                        <li style="text-align: left;">It was able to convert the speech to text and then process the text to speech.</li>
+                        <li style="text-align: left;">The smart voice control was done with the help of VC02 module,used for offline speech recognition.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+    
+    <section id="resume">
+        <h2>Resume</h2>
+        <p class="contact-info"><a href="https://drive.google.com/file/d/1pzXFRihQIA-htWQvUCz3eaRGiNoc0iPK/view?usp=sharing" target="_blank">
+            Download My Resume
+        </a>
+        </p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p class="contact-info">Email: <a href="mailto:amolsadana2@gmail.com">amolsadana2@gmail.com</a></p>
+        <p class="contact-info">Phone: <a href="tel:7807523666">7807523666</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Amol Sadana, All rights reserved.</p>
+    </footer>
+</body>
+</html>
